@@ -1,0 +1,119 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: 3rem solid #e5f3f4;
+  display: flex;
+  font-family: 'Josefin Sans', sans-serif;
+  min-height: 100vh;
+  text-transform: uppercase;
+}
+
+/* This is the left-hand section of the background */
+.container-left {
+  width: 75%;
+}
+
+/* This is the right-hand section of the background */
+.container-right {
+  background: url("compass.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  width: 25%;
+}
+
+/* This is the navigation incl logo */
+.main-nav {
+  align-items: center;
+  color: #b6b6b6;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 60px;
+  width: 35%;
+}
+
+.logo {
+  cursor: pointer;
+  height: 50px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  width: 70px;
+}
+
+/* This is the "selected" indicator */
+.logo:after {
+  content: "";
+  display: block;
+  margin-left: 25px;
+  margin-top: -30px;
+  width: 17px;
+}
+
+.logo:after {
+  border-bottom: 5px solid #000;
+  margin-bottom: 50px;
+}
+
+.nav-item {
+  margin: 20px;
+}
+
+/* This is the main heading. The text and container are split into separate classes so that the font-size
+doesn't affect the border-bottom */
+.hero-text-container {
+  border-bottom: 1px solid #b6b6b6;
+  margin: 20px 20px 20px 90px;
+  width: 80%;
+}
+
+.hero-text {
+  font-size: 55px;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 55px 20px 20px 90px;
+}
+
+/* This contains both two groups of image + text */
+.thumbnail-container {
+   display: flex;
+   flex-direction: row;
+   font-size: 14px;
+   font-style: italic;
+   font-weight: 400;
+   justify-content: space-between;
+   margin: 10px 20px 0px 90px;
+   text-transform: capitalize;
+   width: 80%;
+}
+
+.thumbnail-image {
+  border-radius: 50%;
+  height: 125px;
+  margin: 0px 15px 0px 0px;
+  width: 125px;
+}
+
+/* This contains the left-hand image + text using flex to position them side by side. It also adds the border-right */
+.content-left {
+  align-items: center;
+  border-right: 1px solid #b6b6b6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 50px;
+  width: 40%;
+}
+
+/* This contains the right-hand image + text */
+.content-right {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
